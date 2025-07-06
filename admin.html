@@ -3,94 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin Panel - Buraydah Vegetable Shop</title>
-  <link rel="stylesheet" href="./assets/css/admin.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Admin Login - Buraydah Vegetable Shop</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <div class="logo-container">
-        <img src="./assets/img/logo-removebg-preview.png" alt="Logo" class="logo" />
-        <div class="title">Buraydah</div>
+  <!-- Decorative background dots -->
+  <div class="dot dot1"></div>
+  <div class="dot dot2"></div>
+  <div class="dot dot3"></div>
+  <img src="./assets/img/c339655ddd8bbe243d5416d7d50bc4618b47b338.png" class="bg-fruit fruit-left" alt="">
+  <img src="./assets/img/c339655ddd8bbe243d5416d7d50bc4618b47b338.png" class="bg-fruit fruit-right" alt="">
+<div class="container admin-login-page">
+  <div class="card">
+    <img src="./assets/img/logo-removebg-preview.png" alt="Logo" class="logo" />
+    <h1 class="title">Admin</h1>
+    <form class="login-form">
+      <input type="text" placeholder="Admin Code" required>
+      <input type="password" placeholder="Password" required>
+      <div class="button-group">
+        <button type="button" class="button shop-button">Shop</button>
+        <button type="submit" class="button login-button">Login</button>
       </div>
-      <nav class="menu">
-        <a href="#" class="menu-item active"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
-        <a href="#" class="menu-item"><i class="fas fa-box"></i><span>Products</span></a>
-        <a href="#" class="menu-item"><i class="fas fa-shopping-cart"></i><span>Orders</span></a>
-        <a href="#" class="menu-item"><i class="fas fa-users"></i><span>Customers</span></a>
-        <a href="#" class="menu-item"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
-        <a href="#" class="menu-item"><i class="fas fa-cog"></i><span>Settings</span></a>
-      </nav>
-    </div>
-    <div class="main-content">
-      <header class="header">
-        <div class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search...">
-        </div>
-        <div class="user-info">
-          <i class="fas fa-bell"></i>
-          <span>Admin</span>
-          <img src="./assets/img/logo-removebg-preview.png" alt="User Avatar" class="avatar">
-        </div>
-      </header>
-      <div class="content">
-        <div class="card-row">
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
-            <div class="card-info">
-              <div class="card-title">Total Sales</div>
-              <div class="card-value">$12,345</div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
-            <div class="card-info">
-              <div class="card-title">Total Orders</div>
-              <div class="card-value">1,234</div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-icon"><i class="fas fa-users"></i></div>
-            <div class="card-info">
-              <div class="card-title">New Customers</div>
-              <div class="card-value">123</div>
-            </div>
-          </div>
-        </div>
-        <div class="table-container">
-          <div class="table-header">
-            <h2>Recent Orders</h2>
-            <button class="button">View All</button>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Order ID</th>
-                <th>Customer</th>
-                <th>Date</th>
-                <th>Total</th>
-                <th>Status</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Sample Row -->
-              <tr>
-                <td>#12345</td>
-                <td>John Doe</td>
-                <td>2025-07-06</td>
-                <td>$55.50</td>
-                <td><span class="status-shipped">Shipped</span></td>
-                <td><button class="action-button">Details</button></td>
-              </tr>
-              <!-- Add more rows as needed -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+    </form>
+  </div>
   </div>
 </body>
 </html>

@@ -219,7 +219,7 @@ body {
 
   .button {
     font-size: 16px;
-    width: 100%;
+    width: 90%;
     padding: 8px 20px;
     margin: 5px 0;
   }
@@ -244,4 +244,74 @@ body {
     width: 60px;
     height: 60px;
   }
+}
+
+/* Admin Login Styles based on admin.png */
+
+
+.admin-login-page .login-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+
+.admin-login-page .login-form input::placeholder {
+  color: #a0a0a0; /* Light gray for placeholder */
+}
+
+.admin-login-page .button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.admin-login-page .button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin: 0px ;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.admin-login-page .shop-button {
+  background-color: #689f38; /* Darker green from admin.png */
+}
+
+.admin-login-page .login-button {
+  background-color: #4caf50; /* Lighter green from admin.png */
+}
+
+.admin-login-page .button:hover {
+  background-color: #fff;
+  color: #09e364;
+  letter-spacing: 10px;
+}
+
+.admin-login-page .bg-fruit {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+  width: 35%;
+}
+
+.admin-login-page .fruit-left {
+  left: 0;
+  transform: translate(-40%, -50%);
+}
+
+.admin-login-page .fruit-right {
+    right: 0;
+    transform: translate(50%, -50%);
 }
