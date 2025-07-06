@@ -56,15 +56,17 @@
       width: 40%;
       z-index: 1;
       opacity: 0.9;
+
     }
 
     .fruit-left {
       left: 0;
-      transform: translate(-50%,-50%) scaleX(-1);
+      
+      transform: translate(-50%,-50%) scaleX(-1); 
     }
 
     .fruit-right {
-      right: 0;
+      right: 0%;
       transform: translate(50%,-50%) scaleX(-1); /* Flip horizontally */
     }
 
@@ -80,13 +82,14 @@
       z-index: 2;
     }
 
+
     .card {
     background: rgba(255, 255, 255, 0.15);
     padding: 40px;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    width: 45%;
+    width: 35%;
     /* position: relative; */
     display: flex;
     flex-direction: column;
@@ -122,6 +125,7 @@
     border: none;
     padding: 12px 40px;
     /* position: relative; */
+    text-decoration: none;
     display: block;
     margin: 10px;
     font-weight: bold;
@@ -140,6 +144,23 @@
 }
 
     @media (max-width: 768px) {
+      .card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
       .fruit-left,
       .fruit-right {
         width: 50%;
@@ -173,8 +194,8 @@
       <img src="./assets/logo-removebg-preview.png" alt="Logo" class="logo" />
       <div class="title">Buraydah</div>
       <div class="subtitle">Vegetable Super Shop</div>
-      <a href="#"><button class="button">Admin</button></a>
-      <a href="#"><button class="button">Shop</button></a>
+      <button class="button">Admin</button>
+      <button class="button">Shop</button>
     </div>
   </div>
 </body>
