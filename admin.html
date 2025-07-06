@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin Panel - Buraydah Vegetable Shop</title>
   <link rel="stylesheet" href="./assets/css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
@@ -14,29 +15,49 @@
         <div class="title">Buraydah</div>
       </div>
       <nav class="menu">
-        <a href="#" class="menu-item active">Dashboard</a>
-        <a href="#" class="menu-item">Products</a>
-        <a href="#" class="menu-item">Orders</a>
-        <a href="#" class="menu-item">Customers</a>
-        <a href="#" class="menu-item">Analytics</a>
-        <a href="#" class="menu-item">Settings</a>
+        <a href="#" class="menu-item active"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+        <a href="#" class="menu-item"><i class="fas fa-box"></i><span>Products</span></a>
+        <a href="#" class="menu-item"><i class="fas fa-shopping-cart"></i><span>Orders</span></a>
+        <a href="#" class="menu-item"><i class="fas fa-users"></i><span>Customers</span></a>
+        <a href="#" class="menu-item"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
+        <a href="#" class="menu-item"><i class="fas fa-cog"></i><span>Settings</span></a>
       </nav>
     </div>
     <div class="main-content">
       <header class="header">
         <div class="search-bar">
+          <i class="fas fa-search"></i>
           <input type="text" placeholder="Search...">
         </div>
         <div class="user-info">
+          <i class="fas fa-bell"></i>
           <span>Admin</span>
           <img src="./assets/img/logo-removebg-preview.png" alt="User Avatar" class="avatar">
         </div>
       </header>
       <div class="content">
         <div class="card-row">
-          <div class="card">Total Sales</div>
-          <div class="card">Total Orders</div>
-          <div class="card">New Customers</div>
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
+            <div class="card-info">
+              <div class="card-title">Total Sales</div>
+              <div class="card-value">$12,345</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="card-info">
+              <div class="card-title">Total Orders</div>
+              <div class="card-value">1,234</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fas fa-users"></i></div>
+            <div class="card-info">
+              <div class="card-title">New Customers</div>
+              <div class="card-value">123</div>
+            </div>
+          </div>
         </div>
         <div class="table-container">
           <div class="table-header">
@@ -51,6 +72,7 @@
                 <th>Date</th>
                 <th>Total</th>
                 <th>Status</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -61,6 +83,7 @@
                 <td>2025-07-06</td>
                 <td>$55.50</td>
                 <td><span class="status-shipped">Shipped</span></td>
+                <td><button class="action-button">Details</button></td>
               </tr>
               <!-- Add more rows as needed -->
             </tbody>
