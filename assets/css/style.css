@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #b5e88f, #73d655);
-  overflow: hidden;
+  overflow: hidden; /* This will prevent any scrolling */
   position: relative;
   min-height: 100vh;
+  width: 100%;
 }
 
 /* Background big dots */
@@ -156,58 +158,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    /* Allow scrolling on smaller devices */
-  }
   .card {
     width: 80%;
-    padding: 30px 20px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .button {
-    font-size: 20px;
-    padding: 10px 30px;
-  }
-
-  .fruit-left,
-          .fruit-right {
-            width: 25%; /* Make fruits smaller */
-            opacity: 0.4; /* Make them more transparent */
-          }
-
-          .dot1 {
-            width: 120px;
-            height: 120px;
-          }
-
-          .dot2 {
-            width: 150px;
-            height: 150px;
-          }
-
-          .dot3 {
-            width: 90px;
-            height: 90px;
-          }
-}
-
-@media (max-width: 480px) {
-  .card {
-    width: 90%;
-    padding: 25px 15px;
-  }
-
-  .logo {
-    width: 120px;
-    height: 120px;
+    padding: 20px 15px;
   }
 
   .title {
@@ -220,6 +173,75 @@ body {
 
   .button {
     font-size: 18px;
+    padding: 8px 25px;
+  }
+
+  .fruit-left,
+  .fruit-right {
+    width: 20%;
+    opacity: 0.3;
+  }
+
+  .dot1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .dot2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .dot3 {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 95%;
+    padding: 15px 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 16px;
     width: 100%;
+    padding: 8px 20px;
+    margin: 5px 0;
+  }
+
+  .fruit-left,
+  .fruit-right {
+    width: 15%;
+    opacity: 0.2;
+  }
+
+  .dot1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .dot2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .dot3 {
+    width: 60px;
+    height: 60px;
   }
 }
