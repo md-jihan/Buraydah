@@ -4,181 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Buraydah Vegetable Shop</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #b5e88f, #73d655);
-      overflow: hidden;
-      position: relative;
-      min-height: 100vh;
-    }
-
-    /* Background big dots */
-    .dot {
-      position: absolute;
-      border-radius: 50%;
-    }
-
-    .dot1 {
-      width: 200px;
-      height: 200px;
-      background-color: #1c4d30;
-      top: 10%;
-      left: 5%;
-    }
-
-    .dot2 {
-      width: 250px;
-      height: 250px;
-      background-color: #09e364;
-      bottom: 10%;
-      right: 5%;
-    }
-
-    .dot3 {
-      width: 150px;
-      height: 150px;
-      background-color: #bbf0a0;
-      bottom: 30%;
-      left: 10%;
-    }
-
-    .fruit-left, .fruit-right {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 40%;
-      z-index: 1;
-      opacity: 0.9;
-
-    }
-
-    .fruit-left {
-      left: 0;
-      
-      transform: translate(-50%,-50%) scaleX(-1); 
-    }
-
-    .fruit-right {
-      right: 0%;
-      transform: translate(50%,-50%) scaleX(-1); /* Flip horizontally */
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      min-height: 100vh;
-      padding: 20px;
-      position: relative;
-      z-index: 2;
-    }
-
-
-    .card {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 40px;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-    .logo {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      font-size: 40px;
-      font-weight: bold;
-      color: #1c4625;
-      font-style: italic;
-      margin: 5px 0;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      font-weight: 500;
-      color: white;
-      margin-bottom: 30px;
-    }
-
-    .button {
-    background-color: #3d8218;
-    color: white;
-    border: none;
-    padding: 12px 40px;
-    /* position: relative; */
-    text-decoration: none;
-    display: block;
-    margin: 10px;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 24px;
-    width: 90%;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.5s ease,letter-spacing 0.5s ease;
-}
-
-    .button:hover {
-    background-color: #fff;
-    color: #09e364;
-    letter-spacing: 10px;
-}
-    @media (max-width: 476px) {
-      .card {
-    width: 80% !important;
-    padding: 30px 20px;
-  }
-}
-
-    @media (max-width: 768px) {
-      .card {
-    width: 50%;
-    padding: 30px 20px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .button {
-    font-size: 20px;
-  }
-
-      .fruit-left,
-      .fruit-right {
-        width: 50%;
-        top: auto;
-        bottom: 0;
-        transform: translate(0);
-        opacity: 0.6;
-      }
-
-      .fruit-right {
-        right: 0;
-        transform: scaleX(-1);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
@@ -188,13 +14,13 @@
   <div class="dot dot3"></div>
 
   <!-- Left and right fruit decorations -->
-  <img src="./assets/c339655ddd8bbe243d5416d7d50bc4618b47b338.png" alt="Fruits" class="fruit-left">
-  <img src="./assets/c339655ddd8bbe243d5416d7d50bc4618b47b338.png" alt="Fruits" class="fruit-right">
+  <img src="./assets/img/c339655ddd8bbe243d5416d7d50bc4618b47b338.png" alt="Fruits" class="fruit-left">
+  <img src="./assets/img/c339655ddd8bbe243d5416d7d50bc4618b47b338.png" alt="Fruits" class="fruit-right">
 
   <!-- Main content -->
   <div class="container">
     <div class="card">
-      <img src="./assets/logo-removebg-preview.png" alt="Logo" class="logo" />
+      <img src="./assets/img/logo-removebg-preview.png" alt="Logo" class="logo" />
       <div class="title">Buraydah</div>
       <div class="subtitle">Vegetable Super Shop</div>
       <button class="button">Admin</button>
