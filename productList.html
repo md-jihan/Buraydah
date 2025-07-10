@@ -3,144 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product List | Buraydah</title>
+  <title>Products Table | Buraydah</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <style>
-    body {
-      background: #f4f4f4;
-      overflow-y: auto;
-    }
-    .container-fluid {
-      padding: 20px;
-    }
-    .header {
-      background-color: #ffffff;
-      padding: 15px 30px;
-      text-align: center;
-      border-bottom: 5px solid #5a9b37;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 10;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .header h1 {
-      color: #1c4625;
-      font-size: 26px;
-      font-style: italic;
-      font-weight: bold;
-    }
-    .search-bar {
-      width: 300px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .add-product-btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .product-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .product-table th, .product-table td {
-      border: 1px solid #ddd;
-      padding: 12px 15px;
-      text-align: left;
-    }
-    .product-table th {
-      background-color: #f2f2f2;
-      color: #333;
-    }
-    .product-table tr:nth-child(even){background-color: #f9f9f9;}
-    .product-table tr:hover {background-color: #f1f1f1;}
-    .product-table img {
-      width: 50px;
-      height: 50px;
-      border-radius: 5px;
-    }
-    .action-btn {
-      padding: 5px 10px;
-      margin-right: 5px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      color: white;
-    }
-    .edit-btn {
-      background-color: #2196F3;
-    }
-    .delete-btn {
-      background-color: #f44336;
-    }
-  </style>
 </head>
-<body>
+<body class="product-list-body">
 
-  <div class="header">
-    <h1>Product List</h1>
-    <input type="text" placeholder="Search for products..." class="search-bar">
-    <button class="add-product-btn">Add Product</button>
-  </div>
-
-  <div class="container-fluid">
-    <table class="product-table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Product</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td><img src="./assets/img/veg.svg" alt="Tomato"></td>
-          <td>Tomato</td>
-          <td>$2.99</td>
-          <td>150 kg</td>
-          <td>
-            <button class="action-btn edit-btn">Edit</button>
-            <button class="action-btn delete-btn">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><img src="./assets/img/fruit.svg" alt="Apple"></td>
-          <td>Apple</td>
-          <td>$4.50</td>
-          <td>200 kg</td>
-          <td>
-            <button class="action-btn edit-btn">Edit</button>
-            <button class="action-btn delete-btn">Delete</button>
-          </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><img src="./assets/img/veg.svg" alt="Carrot"></td>
-            <td>Carrot</td>
-            <td>$1.99</td>
-            <td>300 kg</td>
-            <td>
-              <button class="action-btn edit-btn">Edit</button>
-              <button class="action-btn delete-btn">Delete</button>
-            </td>
+    <div class="product-list-header">
+      <h1>Products List</h1>
+    </div>
+    <div class="product-table-container">
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>SL</th>
+            <th>Code</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
           </tr>
-      </tbody>
-    </table>
-  </div>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>111122</td>
+            <td>Tomato</td>
+            <td>Big</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>111123</td>
+            <td>Tomato</td>
+            <td>Jambo</td>
+            <td>2</td>
+          </tr>
+          <!-- Add more rows if needed -->
+        </tbody>
+      </table>
+    </div>
+    <div class="product-list-footer">
+      <button class="save-button">Save</button>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .invoice {
+      width: 700px;
+      margin: 20px auto;
+      border: 1px solid #000;
+      padding: 15px;
+    }
+
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 2px solid #000;
+    }
+
+    .invoice-info, .invoice-date {
+      font-size: 14px;
+    }
+
+    .invoice-title {
+      text-align: center;
+    }
+
+    .invoice-title h2 {
+      margin: 0;
+      font-weight: bold;
+      font-family: serif;
+      letter-spacing: 1px;
+    }
+
+    .invoice-title h3 {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    .invoice-title p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .invoice-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .invoice-table thead th {
+      background-color: #54af77;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 8px;
+      border: 1px solid #000;
+    }
+
+    .invoice-table td {
+      border: 1px solid #000;
+      text-align: center;
+      height: 35px;
+    }
+
+    .invoice-table tfoot td {
+      border: 1px solid #000;
+      text-align: center;
+      padding: 8px;
+      font-weight: bold;
+    }
+
+    .vat-note {
+      text-align: left;
+      padding-left: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .subtotal-label {
+      background-color: #54af77;
+      color: white;
+    }
+
+    .total-label {
+      background-color: #165a5b;
+      color: white;
+    }
+
+    .invoice-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 10px 0;
+      border-top: 2px solid #000;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .print-button {
+        display: none;
+      }
+
+      .invoice {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+      }
+
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .invoice {
+        width: 95%;
+        padding: 10px;
+      }
+
+      .invoice-header, .invoice-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      .invoice-title h2 {
+        font-size: 20px;
+      }
+
+      .invoice-table thead th,
+      .invoice-table td {
+        font-size: 12px;
+        padding: 4px;
+      }
+    }
+
+    /* Print Button Style */
+    .print-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #165a5b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .print-button:hover {
+      background-color: #54af77;
+    }
+    
+  </style>
+</head>
+<body>
+  <button class="print-button" onclick="window.print()">Download PDF / Print</button>
+
+  <div class="invoice">
+    <div class="invoice-header">
+      <div class="invoice-info">
+        <span>Invoice Number : <strong>112401</strong></span>
+      </div>
+      <div class="invoice-title">
+        <h2>INVOICE</h2>
+        <h3>Shope number 01</h3>
+        <p>VAT Number : <strong>300012252</strong></p>
+      </div>
+      <div class="invoice-date">
+        <span><strong>01/01/2024</strong></span>
+      </div>
+    </div>
+
+    <table class="invoice-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>VAT</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+       <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" rowspan="3" class="vat-note">15% VAT are added with total amount</td>
+          <td class="subtotal-label">Subtotal</td>
+          <td class="subtotal-value"></td>
+        </tr>
+        <tr>
+          <td class="subtotal-label">Sales Tax</td>
+          <td class="subtotal-value"></td>
+        </tr>
+        <tr>
+          <td class="total-label">TOTAL (+VAT)</td>
+          <td class="total-value"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="invoice-footer">
+      <span>01/01/2024</span>
+      <span>12:12:50</span>
+      <span>Page:1/1</span>
+      <span>Printed by : Admin</span>
+    </div>
+  </div>
+</body>
+</html>
